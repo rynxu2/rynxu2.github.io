@@ -1,9 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Quicksand:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccc;
+}
+
+p {
+  font-family: "Poppins", sans-serif !important;
+}
+
 header {
   width: 100%;
 }
+header nav {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  background-color: #ccc;
+}
 header nav ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header nav ul li a {
+  display: inline-block;
+  padding: 20px 60px;
+  color: #000;
   text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+header nav ul li a:hover {
+  color: #205bfd;
+}
+
+main #about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  transform: translateY(-50px);
+}
+main #about .card {
+  color: #000;
+  background-color: #F8FBFE;
+}
+main #about .card .card__content {
+  padding: 30px 50px 50px 50px;
+}
+main #about .card .card__content .contact-group {
+  display: flex;
+  align-items: center;
+}
+main #about .card .card__content .contact-group .contact {
+  flex: 0 0 40%;
+  padding: 10px 20px;
+}
+main #about .card .card__content .contact-group .contact .contact-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+main #about .card .card__content .contact-group .contact .contact-info img {
+  max-width: 200px;
+}
+main #about .card .card__content .contact-group .contact .contact-info .ava {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main #about .card .card__content .contact-group .contact .contact-info .ava .name p {
+  font-size: 14px;
+}
+main #about .card .card__content .contact-group .contact .contact-info .ava .social a {
+  display: inline-block;
+  padding: 0px 15px;
+  color: #fff;
+  text-decoration: none;
+}
+main #about .card .card__content .contact-group .contact .contact-info .ava .social a:hover {
+  color: #205bfd;
+}
+main #about .card .card__content .contact-group .about-content {
+  flex: 0 0 60%;
+}
+main #about .card .card__content .contact-group .about-content .text {
+  padding: 0 60px 0 40px;
+  font-size: 16px;
+  text-align: justify;
+  font-weight: 500;
+  transform: translateY(-10px);
+}
+main #about .card .card__content .contact-group .about-content .text .info-me {
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  row-gap: 20px;
+}
+main #school {
+  width: 100%;
+  height: 100vh;
+  padding-top: 10px;
+  color: #fff;
+}
+main #school .card {
+  padding: 0 0 30px 0;
+  background-color: #011522;
+}
+main #school .card .card__content .title {
+  text-align: center;
+  margin: 20px 0 0 0;
+  font-weight: 800;
+}
+main #school .card .card__content .content {
+  padding: 10px 40px;
+  text-align: justify;
+}
+main #school .card .card__content .content div {
+  margin: 20px 0;
+}
+main #school .card .card__content .content div .content-title {
+  font-size: 20px !important;
+}
+main #school .card .card__content .content div strong {
+  font-size: 17px;
+}
+main #school .card .card__content .content div p,
+main #school .card .card__content .content div li {
+  font-size: 15px;
+  line-height: 28px;
+}
+main #school .card .card__content .content div ul {
+  list-style: inside;
+}
+main #major {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #major .card {
+  background-color: #F8FBFE;
+}
+main #major .card .card__content .title {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+main #major .card .card__content .content {
+  padding: 40px 40px;
+  text-align: justify;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.card {
+  width: 850%;
+  max-width: 1200px;
+  margin: 100px auto;
+  background-color: #F8FBFE;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+
+.circle {
+  padding: 0 4px;
+}
+
+.box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff605c;
+}
+
+.yellow {
+  background-color: #ffbd44;
+}
+
+.green {
+  background-color: #00ca4e;
+}
+
+.contact-box {
+  width: 230px;
+  height: 280px;
+  border-radius: 2em;
+  padding: 10px;
+  margin: auto;
+  background-color: #191919;
+  box-shadow: 5px 5px 30px rgb(4, 4, 4), -5px -5px 30px rgb(57, 57, 57);
+}
+
+.profileimage {
+  background-color: transparent;
+  border: none;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5em;
+  width: 100px;
+  height: 100px;
+}
+.profileimage img {
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+.pfp {
+  border-radius: 35em;
+  fill: white;
+}
+
+.Name {
+  text-align: center;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 15px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.socialbar {
+  text-align: center;
+  background-color: #191919;
+  border-radius: 3em;
+  width: 90%;
+  padding: 14px;
+  margin: auto;
+  margin-top: 15px;
+  color: white;
+  box-shadow: 3px 3px 15px rgb(0, 0, 0), -3px -3px 15px rgb(58, 58, 58);
+}
+
+.card a {
+  transition: 0.4s;
+  color: white;
+}
+
+#github:hover {
+  color: #c9510c;
+}
+
+#instagram:hover {
+  color: #d62976;
+}
+
+#facebook:hover {
+  color: #3b5998;
+}
+
+#twitter:hover {
+  color: #00acee;
 }/*# sourceMappingURL=style.css.map */
