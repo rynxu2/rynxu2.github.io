@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #eee;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+header .nav-bar {
+  width: 100%;
+  background-color: #eee;
+}
+header .nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+header .nav-bar ul .nav-link a {
+  padding: 15px 40px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+}
+header .nav-bar ul .nav-link a:hover {
+  background-color: #fff;
+  color: blue;
+}
+
+main {
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+main .left-nav {
+  position: sticky;
+  top: 60px;
+  background-color: #fff;
+}
+main .left-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+main .left-nav ul li a {
+  display: inline-block;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: #000;
+}
+main .left-nav ul li a:hover {
+  text-decoration: underline;
+}
+main .app {
+  flex: 1 1 0;
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+main .app #content-container {
+  flex: 1 1 0;
+}
+main .app #content-container .text-content .card {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #F8FBFE;
+  border-radius: 8px;
+  z-index: 1;
+}
+main .app #content-container .text-content .card .tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+main .app #content-container .text-content .card .tools .circle {
+  padding: 0 4px;
+}
+main .app #content-container .text-content .card .tools .circle .box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+}
+main .app #content-container .text-content .card .tools .circle .red {
+  background-color: #ff605c;
+}
+main .app #content-container .text-content .card .tools .circle .yellow {
+  background-color: #ffbd44;
+}
+main .app #content-container .text-content .card .tools .circle .green {
+  background-color: #00ca4e;
+}
+main .app #content-container .text-content .card .card__content .info {
+  padding: 10px 40px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  row-gap: 10px;
+}
+main .app #content-container .text-content .card .card__content .info p {
+  font-size: 15px;
+}
+main .app #content-container .text-content .card .card__content .content-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 50px;
+}
+main .app #content-container .text-content .card .card__content .content-box .character {
+  flex: 0 0 30%;
+}
+main .app #content-container .text-content .card .card__content .content-box .character h3 {
+  text-align: center;
+}
+main .app #content-container .text-content .card .card__content .content-box .character div {
+  margin: 5px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .app #content-container .text-content .card .card__content .content-box .character div .serial {
+  max-width: 45px;
+  padding: 10px 20px;
+  background-color: #00ca4e;
+  text-align: center;
+}
+main .app #content-container .text-content .card .card__content .content-box .character div i {
+  font-size: 30px;
+  margin-left: -6px;
+  color: #00ca4e;
+}
+main .app #content-container .text-content .card .card__content .content-box .character div .log {
+  background-color: #eee;
+  width: 100%;
+  padding: 10px 10px;
+  margin-left: 5px;
+}
+main .app #content-container .text-content .card .card__content .content-box .interest {
+  flex: 0 0 30%;
+}
+main .app #content-container .text-content .card .card__content .content-box .interest h3 {
+  text-align: center;
+}
+main .app #content-container .text-content .card .card__content .content-box .interest div {
+  margin: 5px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .app #content-container .text-content .card .card__content .content-box .interest div .serial {
+  max-width: 45px;
+  padding: 10px 20px;
+  background-color: #00ca4e;
+  text-align: center;
+  border-radius: 50%;
+}
+main .app #content-container .text-content .card .card__content .content-box .interest div i {
+  font-size: 30px;
+  margin-left: -9px;
+  color: #00ca4e;
+}
+main .app #content-container .text-content .card .card__content .content-box .interest div .log {
+  background-color: #eee;
+  width: 100%;
+  padding: 10px 10px;
+  margin-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+main .app #content-container .text-content .card .card__content .info {
+  text-align: justify;
+}
+main .app #content-container #home {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+main .app #content-container #home .card {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #011522;
+  border-radius: 8px;
+  z-index: 1;
+}
+main .app #content-container #home .tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+main .app #content-container #home .circle {
+  padding: 0 4px;
+}
+main .app #content-container #home .box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+}
+main .app #content-container #home .red {
+  background-color: #ff605c;
+}
+main .app #content-container #home .yellow {
+  background-color: #ffbd44;
+}
+main .app #content-container #home .green {
+  background-color: #00ca4e;
+}
+main .app #content-container #home .card__content {
+  padding: 30px;
+}
+main .app #content-container #home .card__content .title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+main .app #content-container #home .card__content .title h2 {
+  text-transform: uppercase;
+}
+main .app #content-container #home .card__content .title span {
+  font-style: italic;
+  font-size: 13px;
+}
+main .app #content-container #home .card__content .content {
+  font-size: 16px;
+}
+main .app #content-container #home .card__content .content .intro {
+  margin-bottom: 30px;
+}
+main .app #content-container #home .card__content .content .log .log1 {
+  text-align: justify;
+}
+main .app #content-container #home .card__content .content .log .log1 h3 {
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+main .app #content-container #home .card__content .content .log .log1 h5 {
+  font-size: 18px;
+  line-height: 35px;
+}
+main .app #content-container #home .card__content .content .log .log1 p {
+  line-height: 23px;
+}
+main .app #content-container #home .card__content .content .log .log1 img {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main .app #content-container #home .card__content .content .log .log2 {
+  text-align: justify;
+  margin-top: 50px;
+}
+main .app #content-container #home .card__content .content .log .log2 h3 {
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+main .app #content-container #home .card__content .content .log .log2 h5 {
+  font-size: 18px;
+  line-height: 35px;
+}
+main .app #content-container #home .card__content .content .log .log2 p {
+  line-height: 23px;
+}
+main .app #content-container #home .card__content .content .log .log2 img {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main .app #about-me .card-client {
+  background: #2cb5a0;
+  width: 20rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 4px solid #7cdacc;
+  box-shadow: 0 6px 10px rgb(207, 212, 222);
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  position: sticky;
+  top: 60px;
+}
+main .app #about-me .card-client .user-picture {
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 5rem;
+  height: 5rem;
+  border: 4px solid #7cdacc;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+main .app #about-me .card-client .user-picture img {
+  width: 4.5rem;
+  fill: currentColor;
+}
+main .app #about-me .card-client .name-client {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+main .app #about-me .card-client .name-client span {
+  display: block;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 25px;
+}
+main .app #about-me .card-client .social-media a {
+  position: relative;
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+main .app #about-me .card-client .social-media a svg {
+  width: 1.1rem;
+  fill: currentColor;
+}
+main .app #about-me .card-client .social-media a:last-child {
+  margin-right: 0;
+}
+main .app #about-me .card-client .social-media .tooltip-social:after {
+  border-top-color: #262626;
+}
+main .app #about-me .card-client .social-media a:hover .tooltip-social {
+  opacity: 1;
+  transform: translate(-50%, -130%);
+}
+main .app #about-me .card-client .social-media:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+  background: #7cdacc;
+}
+main .app #about-me .card-client .tooltip-social {
+  background: #262626;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+main .app #about-me .card-client .tooltip-social:after {
+  content: " ";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+main .app #about-me .card-client:hover {
+  transform: translateY(-10px);
+}
+
+footer {
+  width: 100%;
+  background-color: #444;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 13px;
+}/*# sourceMappingURL=styles.css.map */

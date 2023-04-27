@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #eee;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+header .nav-bar {
+  width: 100%;
+  background-color: #eee;
+}
+header .nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+header .nav-bar ul .nav-link a {
+  padding: 15px 40px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+}
+header .nav-bar ul .nav-link a:hover {
+  background-color: #fff;
+  color: blue;
+}
+
+main {
+  padding-top: 100px;
+}
+main section .card {
+  width: 100%;
+  max-width: 1000px;
+  height: 350px;
+  margin: 0 auto;
+  background-color: #e8e8e8;
+  border-radius: 8px;
+  z-index: 1;
+}
+main section .tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+main section .circle {
+  padding: 0 4px;
+}
+main section .box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+}
+main section .red {
+  background-color: #ff605c;
+}
+main section .yellow {
+  background-color: #ffbd44;
+}
+main section .green {
+  background-color: #00ca4e;
+}
+main section .card__content {
+  padding: 0 30px;
+}
+main section .card__content h3 {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+main section .card__content .input {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: 300ms ease-in-out;
+}
+main section .card__content .input:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696, -13px -13px 100px #ffffff;
+}
+main section .card__content button {
+  --primary-color: #645bff;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+main section .card__content button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .card__content button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+main section .card__content button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+main section .card__content button:hover {
+  background-color: var(--hover-color);
+}
+main section .card__content button:hover .arrow {
+  background: var(--secondary-color);
+}
+main section .card__content button:hover .arrow:before {
+  right: 0;
+}
+main section .card__content #input1,
+main section .card__content #input2 {
+  display: inline-block;
+  width: 45%;
+}
+main section .card__content #input1 {
+  margin-left: 10px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+main section .card__content #input3 {
+  margin-left: 10px;
+  width: 95%;
+  height: 100px;
+}
+main section .card__content button {
+  float: right;
+  margin-right: 35px;
+  margin-top: 30px;
+}/*# sourceMappingURL=contact.css.map */
